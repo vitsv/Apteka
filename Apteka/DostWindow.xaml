@@ -1,0 +1,19 @@
+﻿<Window x:Class="Apteka.DostWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Nowa Dostawa" Height="300" Width="449" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button Content="Dodaj kolejny" Height="37" HorizontalAlignment="Left" Margin="312,10,0,0" Name="Dodaj" VerticalAlignment="Top" Width="101" Click="Dodaj_Click" />
+        <Button Content="Usuń z listy" Height="37" HorizontalAlignment="Left" Margin="312,0,0,171" Name="Usun" VerticalAlignment="Bottom" Width="101" Click="Usun_Click" />
+        <Label Content="Ilość:" Height="28" HorizontalAlignment="Left" Margin="215,126,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="0" HorizontalAlignment="Left" Margin="257,126,0,110" Name="Ilosc" />
+        <Label Content="Razem:" FontSize="14" Height="28" HorizontalAlignment="Left" Margin="200,144,0,0" Name="label2" VerticalAlignment="Top" />
+        <Label Content="0" FontSize="14" Height="28" HorizontalAlignment="Left" Margin="256,144,0,0" Name="Razem" VerticalAlignment="Top" />
+        <Button Content="Realizuj" Height="36" HorizontalAlignment="Left" Margin="227,181,0,0" Name="Realizuj" VerticalAlignment="Top" Width="99" Click="Realizuj_Click"/>
+        <Button Content="Anuluj" Height="36" HorizontalAlignment="Left" Margin="332,181,0,0" Name="Anuluj" VerticalAlignment="Top" Width="81" Click="Anuluj_Click"/>
+        <Label Content="x Ile:" Height="28" HorizontalAlignment="Left" Margin="10,128,0,0" Name="label3" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Right" Margin="0,128,332,0" Name="po_ile" VerticalAlignment="Top" Width="52" />
+        <ListBox FontSize="13" Height="100" HorizontalAlignment="Left" Margin="10,10,0,0" Name="Leki" VerticalAlignment="Top" Width="296" SelectionChanged="Leki_SelectionChanged" />
+        <Button Content="Zmień" Height="23" HorizontalAlignment="Left" Margin="101,128,0,0" Name="button1" VerticalAlignment="Top" Width="56" Click="button1_Click_1"/>
+    </Grid>
+</Window>

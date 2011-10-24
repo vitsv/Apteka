@@ -1,0 +1,32 @@
+﻿<Window x:Class="Apteka.Search"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Szukaj" Height="300" Width="473" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Nazwa leku:" Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="label1" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="144,12,0,0" Name="textBox1" VerticalAlignment="Top" Width="191" />
+        <Label Content="Międzynarodowa nazwa:" Height="28" HorizontalAlignment="Left" Margin="12,43,0,0" Name="label2" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="144,43,0,0" Name="textBox2" VerticalAlignment="Top" Width="191" TextChanged="textBox2_TextChanged" />
+        <Button Content="Szukaj" Height="23" HorizontalAlignment="Left" Margin="271,226,0,0" Name="button1" VerticalAlignment="Top" Width="75" IsDefault="True" Click="button1_Click" />
+        <Button Content="Anuluj" Height="23" HorizontalAlignment="Right" Margin="0,226,21,0" Name="button2" VerticalAlignment="Top" Width="75" Click="button2_Click" />
+        <Expander Header="Dodatkowe parametry wyszukiwanua:" Height="148" HorizontalAlignment="Left" Margin="12,77,0,0" Name="expander1" VerticalAlignment="Top" Width="427">
+        <Grid>
+            <Label Content="+cena  od" Height="28" HorizontalAlignment="Left" Margin="22,6,0,0" Name="label3" VerticalAlignment="Top" Width="69" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="92,6,0,0" Name="textBox3" VerticalAlignment="Top" Width="120" />
+            <Label Content="do" Height="28" HorizontalAlignment="Left" Margin="229,6,0,0" Name="label4" VerticalAlignment="Top" Width="27" />
+            <TextBox Height="23" HorizontalAlignment="Right" Margin="0,6,34,0" Name="textBox4" VerticalAlignment="Top" Width="120" />
+            <Label Content="+w postaci" Height="26" HorizontalAlignment="Left" Margin="6,34,0,0" Name="label5" VerticalAlignment="Top" Width="69" />
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="75,37,0,0" Name="comboBox1" VerticalAlignment="Top" Width="120" />
+            <Label Content="+w kategorji" Height="26" HorizontalAlignment="Left" Margin="201,37,0,0" Name="label6" VerticalAlignment="Top" Width="78" />
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="271,37,0,0" Name="comboBox2" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" />
+            <Label Content="+dawka" Height="28" HorizontalAlignment="Left" Margin="6,66,0,0" Name="label7" VerticalAlignment="Top" Width="69" />
+            <TextBox Height="23" HorizontalAlignment="Right" Margin="0,71,223,0" Name="textBox5" VerticalAlignment="Top" Width="120" />
+            <Label Content="+opakowanie" Height="28" HorizontalAlignment="Left" Margin="198,69,0,0" Name="label8" VerticalAlignment="Top" Width="81" />
+            <TextBox Height="23" HorizontalAlignment="Right" Margin="0,71,27,0" Name="textBox6" VerticalAlignment="Top" Width="120" />
+            <CheckBox Content="Promocja" Height="16" HorizontalAlignment="Left" Margin="31,100,0,0" Name="checkBox1" VerticalAlignment="Top" />
+            <CheckBox Content="Refundowane" Height="16" HorizontalAlignment="Left" Margin="131,100,0,0" Name="checkBox2" VerticalAlignment="Top" />
+        </Grid>
+        </Expander>
+        <CheckBox Content="Taka jak Nazwa" Height="16" HorizontalAlignment="Right" Margin="0,46,12,0" Name="checkBox3" VerticalAlignment="Top" Checked="checkBox3_Checked" />
+    </Grid>
+</Window>

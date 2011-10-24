@@ -1,0 +1,37 @@
+﻿<Window x:Class="Apteka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Apteka Pro v 0.1" Height="600" Width="800" Loaded="Window_Loaded" Visibility="Visible" AllowsTransparency="False" Activated="Window_Activated" WindowState="Normal" WindowStyle="SingleBorderWindow" IsEnabled="True" IsVisibleChanged="Window_IsVisibleChanged" HorizontalAlignment="Center" VerticalAlignment="Center" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="White" Offset="0"/>
+            <GradientStop Color="#FF889EB9" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Menu Height="18" HorizontalAlignment="Left" Name="menu1" VerticalAlignment="Top" Width="800" FontStretch="Normal" FontFamily="Tahoma" FontWeight="Bold" FontSize="11" FontStyle="Normal">
+            <MenuItem Header="Plik" Click="MenuItem_Click_2">
+                <MenuItem Header="Wyloguj" Click="MenuItem_Click_4"/>
+                <MenuItem Header="Wyjście" Click="MenuItem_Click_3"/>
+            </MenuItem> 
+            <MenuItem Header="Lek" Click="MenuItem_Click_1">
+                <MenuItem Header="Przglądaj bazę" Click="MenuItem_Click_5" />
+                <MenuItem Name="Szukaj" Header="Szukaj" Click="Szukaj_Click"/>
+            </MenuItem>
+            <MenuItem Header="Zamówienia">
+                <MenuItem Header="Nowe zamówienie" Click="MenuItem_Click_9" />
+                <MenuItem Header="Nowa dostawa" Click="MenuItem_Click_10"/>
+                <MenuItem Header="Sprawdź dostępność w magazynie" Click="MenuItem_Click_11"/>
+            </MenuItem>
+            <MenuItem Header="Administracja" Name="Admin" Visibility="Hidden">
+                <MenuItem Header="Edytuj lek" Click="MenuItem_Click_6"/>
+                <MenuItem Header="Dodaj lek" Click="MenuItem_Click_7"/>
+                <MenuItem Header="Konta użytkowników" Click="MenuItem_Click_8"/>
+            </MenuItem>
+        </Menu>
+        <Label Content="Użytkownik" HorizontalAlignment="Left" Margin="695,23,0,521" Name="username_" FontSize="12" FontWeight="Bold" Padding="0" />
+        <Label Content="(Uprawnienia)" Height="28" HorizontalAlignment="Left" Margin="695,36,0,0" Name="rights_" VerticalAlignment="Top" FlowDirection="LeftToRight" Padding="0" />
+        <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="300,23,0,0" Name="Dzisiaj" VerticalAlignment="Top" FontFamily="Verdana" FontSize="16" FontWeight="Bold" />
+        <Label Content="Apteka Pro v. 0.1" Height="92" HorizontalAlignment="Left" Margin="33,287,0,0" Name="label1" VerticalAlignment="Top" FontSize="72" Width="714" FontWeight="Bold" FontFamily="Verdana" Foreground="#FFC8D6DE" />
+    </Grid>
+</Window>

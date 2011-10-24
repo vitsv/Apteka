@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 14.5" name="AptekaData">
+  <DataContextMoniker Name="/AptekaDataDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f7854232-e774-4f36-9175-64bb6b56380d" absoluteBounds="6.25, 3.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/AptekaDataDataContext/Dost_ilosc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="69e14db1-8d13-463d-b1e6-dee341d48dc1" absoluteBounds="6.265, 4.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c635958b-e328-44c4-983b-2477b6c75390" absoluteBounds="3.5, 10.875, 2, 1.2605004882812487">
+      <DataClassMoniker Name="/AptekaDataDataContext/Dostawa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2f8fa612-5691-4a57-986d-a3652662e2a1" absoluteBounds="3.515, 11.335, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2c4b1c5a-1589-421d-8a98-6edb71a5c9ba" absoluteBounds="0.75, 3.875, 2, 1.096153157552084">
+      <DataClassMoniker Name="/AptekaDataDataContext/Kategorie" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fdf40bab-0d85-42c2-a299-b4d466d5054d" absoluteBounds="0.765, 4.335, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="07bc6c8c-7d57-4100-a1d9-651cbb11983a" absoluteBounds="0.75, 7.5, 2, 2.2465844726562505">
+      <DataClassMoniker Name="/AptekaDataDataContext/Klient" />
+      <nestedChildShapes>
+        <elementListCompartment Id="043275d0-fc0b-4431-877a-7f7565cce2d6" absoluteBounds="0.765, 7.96, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="45bce16a-10d2-4875-a87e-24a437290f6c" absoluteBounds="3.5, 2.875, 2, 3.0683211263020826">
+      <DataClassMoniker Name="/AptekaDataDataContext/Lek" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dcac13fc-ac9f-4e4e-9017-392fa2c49f89" absoluteBounds="3.515, 3.335, 1.9700000000000002, 2.508321126302083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c7195ba5-771f-4479-a1e1-a7b90166a223" absoluteBounds="0.75, 1.875, 2, 1.0961531575520835">
+      <DataClassMoniker Name="/AptekaDataDataContext/Postac" />
+      <nestedChildShapes>
+        <elementListCompartment Id="28b4aab4-c53e-48c1-bd08-43be9692ae19" absoluteBounds="0.765, 2.335, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="12aa1848-e7ca-4d13-80a8-f080463e3ef8" absoluteBounds="3.5, 13, 2, 1.2605004882812487">
+      <DataClassMoniker Name="/AptekaDataDataContext/Promocja" />
+      <nestedChildShapes>
+        <elementListCompartment Id="df719565-9a80-4664-98d8-d53b264fe751" absoluteBounds="3.515, 13.46, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="06b6c984-f22c-4664-9f93-4b781f8a1498" absoluteBounds="6.75, 6.375, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/AptekaDataDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="78a6b771-2860-42b2-b65f-034cfc263606" absoluteBounds="6.765, 6.835, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="50d0c65c-7bd8-4bf2-b495-bb8e1f389a90" absoluteBounds="6.25, 0.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/AptekaDataDataContext/Zam_ilosc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d5b7d52a-fc05-4025-bd96-65c457680200" absoluteBounds="6.265, 1.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2c5820cd-e8e3-4f9b-bb0c-6f938c503003" absoluteBounds="3.5, 8, 2, 1.4248478190104175">
+      <DataClassMoniker Name="/AptekaDataDataContext/Zamowienie" />
+      <nestedChildShapes>
+        <elementListCompartment Id="31181953-b322-4153-b8cc-96cf2d448733" absoluteBounds="3.515, 8.46, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 11.5052502441406); (6.46875 : 11.5052502441406); (6.46875 : 5.17484781901042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AptekaDataDataContext/Dostawa/Dostawa_Dost_ilosc" />
+      <nodes>
+        <classShapeMoniker Id="c635958b-e328-44c4-983b-2477b6c75390" />
+        <classShapeMoniker Id="f7854232-e774-4f36-9175-64bb6b56380d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.46242390950521); (5.79166666666667 : 4.46242390950521 : JumpStart); (5.95833333333333 : 4.46242390950521 : JumpEnd); (6.25 : 4.46242390950521)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AptekaDataDataContext/Lek/Lek_Dost_ilosc" />
+      <nodes>
+        <classShapeMoniker Id="45bce16a-10d2-4875-a87e-24a437290f6c" />
+        <classShapeMoniker Id="f7854232-e774-4f36-9175-64bb6b56380d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.42307657877604); (3.5 : 4.42307657877604)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AptekaDataDataContext/Kategorie/Kategorie_Lek" />
+      <nodes>
+        <classShapeMoniker Id="2c4b1c5a-1589-421d-8a98-6edb71a5c9ba" />
+        <classShapeMoniker Id="45bce16a-10d2-4875-a87e-24a437290f6c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.3749995); (4.5 : 2.3749995); (4.5 : 2.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AptekaDataDataContext/Postac/Postac_Lek" />
+      <nodes>
+        <classShapeMoniker Id="c7195ba5-771f-4479-a1e1-a7b90166a223" />
+        <classShapeMoniker Id="45bce16a-10d2-4875-a87e-24a437290f6c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 9.74658447265625); (1.75 : 13.6302502441406); (3.5 : 13.6302502441406)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AptekaDataDataContext/Klient/Klient_Promocja" />
+      <nodes>
+        <classShapeMoniker Id="07bc6c8c-7d57-4100-a1d9-651cbb11983a" />
+        <classShapeMoniker Id="12aa1848-e7ca-4d13-80a8-f080463e3ef8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.0312525 : 2.875); (5.0312525 : 1.46242390950521); (6.25 : 1.46242390950521)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AptekaDataDataContext/Lek/Lek_Zam_ilosc" />
+      <nodes>
+        <classShapeMoniker Id="45bce16a-10d2-4875-a87e-24a437290f6c" />
+        <classShapeMoniker Id="50d0c65c-7bd8-4bf2-b495-bb8e1f389a90" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 8); (5.875 : 7.625); (5.875 : 1.84988786425781); (6.25 : 1.84988786425781)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AptekaDataDataContext/Zamowienie/Zamowienie_Zam_ilosc" />
+      <nodes>
+        <classShapeMoniker Id="2c5820cd-e8e3-4f9b-bb0c-6f938c503003" />
+        <classShapeMoniker Id="50d0c65c-7bd8-4bf2-b495-bb8e1f389a90" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.71242390950521); (3.5 : 8.71242390950521)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AptekaDataDataContext/Klient/Klient_Zamowienie" />
+      <nodes>
+        <classShapeMoniker Id="07bc6c8c-7d57-4100-a1d9-651cbb11983a" />
+        <classShapeMoniker Id="2c5820cd-e8e3-4f9b-bb0c-6f938c503003" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

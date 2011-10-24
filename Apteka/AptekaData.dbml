@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="apteka" Class="AptekaDataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DISEL-PC\SQLEXPRESS;Initial Catalog=apteka;Integrated Security=True" SettingsObjectName="Apteka.Properties.Settings" SettingsPropertyName="aptekaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Dost_ilosc" Member="Dost_iloscs">
+    <Type Name="Dost_ilosc">
+      <Column Name="Dost_iloscID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LekID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DostawaID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Ilosc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Dostawa_Dost_ilosc" Member="Dostawa" ThisKey="DostawaID" OtherKey="DostawaID" Type="Dostawa" IsForeignKey="true" />
+      <Association Name="Lek_Dost_ilosc" Member="Lek" ThisKey="LekID" OtherKey="LekID" Type="Lek" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Dostawa" Member="Dostawas">
+    <Type Name="Dostawa">
+      <Column Name="DostawaID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Data_zam" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Data_realizacji" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Dostawa_Dost_ilosc" Member="Dost_iloscs" ThisKey="DostawaID" OtherKey="DostawaID" Type="Dost_ilosc" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Kategorie" Member="Kategories">
+    <Type Name="Kategorie">
+      <Column Name="KategorieID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nazwa" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="Kategorie_Lek" Member="Leks" ThisKey="KategorieID" OtherKey="KategorieID" Type="Lek" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Klient" Member="Klients">
+    <Type Name="Klient">
+      <Column Name="KlientID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AdresID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Imie" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Nazwisko" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Telefon" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Miasto" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Panstwo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Kod_pocztowy" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Adres" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Klient_Promocja" Member="Promocjas" ThisKey="KlientID" OtherKey="KlientID" Type="Promocja" />
+      <Association Name="Klient_Zamowienie" Member="Zamowienies" ThisKey="KlientID" OtherKey="KlientID" Type="Zamowienie" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Lek" Member="Leks">
+    <Type Name="Lek">
+      <Column Name="LekID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KategorieID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PostacID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nazwa" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="M_nazwa" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="Cena" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Cena_zakupu" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Cena_hutowa" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Refundacja" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Ilosc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Dawka" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Opakowanie" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Data_waznosci" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Promocja" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="Lek_Dost_ilosc" Member="Dost_iloscs" ThisKey="LekID" OtherKey="LekID" Type="Dost_ilosc" />
+      <Association Name="Lek_Zam_ilosc" Member="Zam_iloscs" ThisKey="LekID" OtherKey="LekID" Type="Zam_ilosc" />
+      <Association Name="Kategorie_Lek" Member="Kategorie" ThisKey="KategorieID" OtherKey="KategorieID" Type="Kategorie" IsForeignKey="true" />
+      <Association Name="Postac_Lek" Member="Postac" ThisKey="PostacID" OtherKey="PostacID" Type="Postac" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Postac" Member="Postacs">
+    <Type Name="Postac">
+      <Column Name="PostacID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nazwa" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="Postac_Lek" Member="Leks" ThisKey="PostacID" OtherKey="PostacID" Type="Lek" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Promocja" Member="Promocjas">
+    <Type Name="Promocja">
+      <Column Name="Dost_iloscID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KlientID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Ilosc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Klient_Promocja" Member="Klient" ThisKey="KlientID" OtherKey="KlientID" Type="Klient" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="UsersId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nazwa_uzytkownika" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Haslo" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Prawo" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Zam_ilosc" Member="Zam_iloscs">
+    <Type Name="Zam_ilosc">
+      <Column Name="Zam_iloscID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LekID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ZamowienieID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Ilosc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Lek_Zam_ilosc" Member="Lek" ThisKey="LekID" OtherKey="LekID" Type="Lek" IsForeignKey="true" />
+      <Association Name="Zamowienie_Zam_ilosc" Member="Zamowienie" ThisKey="ZamowienieID" OtherKey="ZamowienieID" Type="Zamowienie" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Zamowienie" Member="Zamowienies">
+    <Type Name="Zamowienie">
+      <Column Name="ZamowienieID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KlientID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Suma" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Data_zam" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Zamowienie_Zam_ilosc" Member="Zam_iloscs" ThisKey="ZamowienieID" OtherKey="ZamowienieID" Type="Zam_ilosc" />
+      <Association Name="Klient_Zamowienie" Member="Klient" ThisKey="KlientID" OtherKey="KlientID" Type="Klient" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

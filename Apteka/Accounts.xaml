@@ -1,0 +1,20 @@
+﻿<Window x:Class="Apteka.Accounts"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Konta użytkowników" Height="300" Width="339" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid Width="373" Height="217">
+        <DataGrid AutoGenerateColumns="False" Height="151" HorizontalAlignment="Left" Margin="18,20,0,0" Name="KontaGrid" VerticalAlignment="Top" Width="208">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=Nazwa_uzytkownika}" Header="Nazwa uzytkownika" />
+                <DataGridTextColumn Binding="{Binding Path=Haslo}" Header="Hasło" />
+                <DataGridTextColumn Binding="{Binding Path=Prawo}" Header="Prawo" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Nowy" Height="41" HorizontalAlignment="Left" Margin="232,20,0,0" Name="Add" VerticalAlignment="Top" Width="75" Click="Add_Click" />
+        <Button Content="Zmień" Height="41" HorizontalAlignment="Left" Margin="232,67,0,0" Name="Edit" VerticalAlignment="Top" Width="75" Click="Edit_Click" />
+        <Button Content="Usuń" Height="41" HorizontalAlignment="Left" Margin="232,114,0,0" Name="Delete" VerticalAlignment="Top" Width="75" Click="Delete_Click" />
+        <Button Content="Zamknij" Height="23" HorizontalAlignment="Left" Margin="232,184,0,0" Name="Zamknij" VerticalAlignment="Top" Width="75" Click="Zamknij_Click" />
+        <Label Content="A - Administrator" Height="28" HorizontalAlignment="Left" Margin="134,166,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="U - Użytkownik" Height="28" HorizontalAlignment="Left" Margin="134,179,0,0" Name="label2" VerticalAlignment="Top" />
+    </Grid>
+</Window>
